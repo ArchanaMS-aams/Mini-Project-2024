@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('spiral1.jpg');
+    background-size: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    font-family: Comia Sans;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+    width: 300px;
+    text-color: black; 
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

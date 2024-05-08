@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('spiral1.jpg');
+      background-size: 1100px;
+      text-align: center;
+    }
+    .profile-form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .profile-form label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      font-weight: bold;
+    }
+    .profile-form input {
+      width: 150px;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+    .profile-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .profile-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Profile</h2>
+  <form class="profile-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="John Doe" disabled><br>
+    <label for="regNumber">Register Number:</label>
+    <input type="text" id="regNumber" name="regNumber" value="123456" disabled><br>
+    <label for="pointsS1">Points at S1:</label>
+    <input type="text" id="pointsS1" name="pointsS1" value="10" disabled><br>
+    <label for="pointsS2">Points at S2:</label>
+    <input type="text" id="pointsS2" name="pointsS2" value="15" disabled><br>
+    <label for="overallPoints">Overall Activity Points:</label>
+    <input type="text" id="overallPoints" name="overallPoints" value="25" disabled><br>
+    <button type="button">Edit Profile</button>
+  </form>
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome, Student!</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" id="home">Home</a></li>
+        <li><a href="profile.html" id="profile">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+     <h2>DASHBOARD</h2>
+  <div class="container">
+   
+      <form id="certificateForm">
+           <label for="Semester">Semester</label><br>
+        <select id="semester">
+          <option value="s1">Semester 1</option>
+          <option value="s2">Semester 2</option>
+          <option value="s2">Semester 3</option>
+          <option value="s2">Semester 4</option>
+          <option value="s2">Semester 5</option>
+          <option value="s2">Semester 6</option>
+          <option value="s2">Semester 7</option>
+          <option value="s2">Semester 8</option>
+          
+        </select><br><br><br>
+        <label for="certificateType">Certificate Type</label><br>
+        <select id="certificateType">
+          <option value="cultural">Cultural</option>
+          <option value="internship">Internship</option>
+          <option value="sports">Sports</option>
+          <option value="technical">Technical</option>
+        </select><br><br><br>
+        <label for="certificateFile" >Upload Certificate</label><br>
+        <input type="file" id="certificateFile" name="certificateFile"><br><br><br>
+        <button id="calculatePointsButton">Calculate</button>
+        <button id="uploadCertificateButton">Submit</button>
+      </form>
+      <p id="totalPointsMessage" style="display: none;">Total points: 20</p>
+    </div>
+
+  <script>
+    document.getElementById('profile').addEventListener('click', function(event)
+    {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+
+    document.getElementById('certificateUploadButton').addEventListener('click', function() 
+    {
+        var form = document.getElementById('certificateUploadForm');
+        form.style.display = 'block';
+    });
+
+    document.getElementById('calculatePointsButton').addEventListener('click', function(event) 
+    {
+        event.preventDefault();
+        var totalPointsMessage = document.getElementById('totalPointsMessage');
+        totalPointsMessage.style.display = 'block';
+    });
+
+
+  </script>
+</body>
+</html>
+
+
